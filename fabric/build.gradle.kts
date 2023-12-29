@@ -1,6 +1,10 @@
 import compass_system.mod_gradle_plugin.ModDependencies
 import compass_system.mod_gradle_plugin.Utils.exclusiveRepo
 
+plugins {
+    kotlin("jvm") version "1.9.22"
+}
+
 group = "compass_system"
 
 val modDependencies = ModDependencies().apply {

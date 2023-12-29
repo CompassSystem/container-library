@@ -3,5 +3,5 @@ plugins {
 }
 
 mod {
-    projects(":fabric")
+    projects(":fabric", ":testfabric")
 }

@@ -1,0 +1,30 @@
+{
+  "variants": {
+    "facing=down": {
+      "model": "cocoli:block/barrel_54",
+      "x": 180
+    },
+    "facing=east": {
+      "model": "cocoli:block/barrel_54",
+      "x": 90,
+      "y": 90
+    },
+    "facing=north": {
+      "model": "cocoli:block/barrel_54",
+      "x": 90
+    },
+    "facing=south": {
+      "model": "cocoli:block/barrel_54",
+      "x": 90,
+      "y": 180
+    },
+    "facing=up": {
+      "model": "cocoli:block/barrel_54"
+    },
+    "facing=west": {
+      "model": "cocoli:block/barrel_54",
+      "x": 90,
+      "y": 270
+    }
+  }
+}
