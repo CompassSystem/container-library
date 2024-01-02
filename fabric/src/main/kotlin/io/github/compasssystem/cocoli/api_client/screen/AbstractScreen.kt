@@ -12,7 +12,7 @@ open class AbstractScreen(
     playerInventory: Inventory,
     title: Component
 ) : AbstractContainerScreen<AbstractInventoryHandler>(menu, playerInventory, title) {
-    fun getExclusionZones() : List<Rect2i> = emptyList()
+    fun getExclusionZones(): List<Rect2i> = emptyList()
 
     override fun renderBg(graphics: GuiGraphics, partialTick: Float, mouseX: Int, mouseY: Int) {
         renderDirtBackground(graphics)

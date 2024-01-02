@@ -34,10 +34,10 @@ class AbstractInventoryHandler(
 
         if (index < inventory.containerSize) { // Moving from container to player
             if (!this.moveItemStackTo(newStack, inventory.containerSize, inventory.containerSize + 36, true)) {
-                    return ItemStack.EMPTY;
+                return ItemStack.EMPTY
             }
         } else if (!this.moveItemStackTo(newStack, 0, inventory.containerSize, false)) { // Moving from player to container
-            return ItemStack.EMPTY;
+            return ItemStack.EMPTY
         }
 
         if (newStack.isEmpty) {
@@ -72,7 +72,7 @@ class AbstractInventoryHandler(
         }
 
         for (x in 0 until 9) { // Player Hotbar Slots
-            this.addSlot(Slot(playerInventory, x, x * Utils.SLOT_SIZE, 3 * Utils.SLOT_SIZE));
+            this.addSlot(Slot(playerInventory, x, x * Utils.SLOT_SIZE, 3 * Utils.SLOT_SIZE))
         }
     }
 
