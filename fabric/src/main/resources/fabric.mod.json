@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "depends": {
+    "fabricloader": ">=0.15.1",
+    "minecraft": "=1.20.4",
+    "fabric-api": ">=0.92.0"
+  },
+  "entrypoints": {
+    "main": [{
+      "value": "io.github.compasssystem.cocoli.impl.CommonInit",
+      "adapter": "kotlin"
+    }],
+    "client": [{
+      "value": "io.github.compasssystem.cocoli.impl_client.ClientInit",
+      "adapter": "kotlin"
+    }],
+    "emi": [{
+      "value": "io.github.compasssystem.cocoli.impl_client.compat.EmiCompat",
+      "adapter": "kotlin"
+    }],
+    "jei_mod_plugin": [{
+        "value": "io.github.compasssystem.cocoli.impl_client.compat.JeiCompat",
+        "adapter": "kotlin"
+    }],
+    "modmenu": [{
+      "value": "io.github.compasssystem.cocoli.impl_client.compat.ModMenuCompat",
+      "adapter": "kotlin"
+    }],
+    "rei_client": [{
+      "value": "io.github.compasssystem.cocoli.impl_client.compat.ReiCompat",
+      "adapter": "kotlin"
+    }]
+  },
+  "environment": "*",
+  "authors": [ "Compasses" ],
+  "mixins": [
+
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/cocoli",
+    "issues": "https://github.com/CompassSystem/container-library/issues",
+    "sources": "https://github.com/CompassSystem/container-library"
+  },
+  "icon": "icon.png",
+  "id": "cocoli",
+  "name": "Compasses' Container Library",
+  "version": "${version}"
+}
