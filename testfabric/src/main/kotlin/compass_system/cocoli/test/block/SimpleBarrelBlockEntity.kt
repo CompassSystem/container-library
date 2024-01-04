@@ -36,6 +36,7 @@ class SimpleBarrelBlockEntity(pos: BlockPos, state: BlockState) : BlockEntity(Te
 
         override fun removeItem(slot: Int, amount: Int): ItemStack {
             val stack = ContainerHelper.removeItem(items, slot, amount)
+
             if (!stack.isEmpty) {
                 this.setChanged()
             }

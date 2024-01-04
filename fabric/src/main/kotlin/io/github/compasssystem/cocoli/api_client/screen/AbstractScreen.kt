@@ -15,6 +15,6 @@ open class AbstractScreen(
     fun getExclusionZones(): List<Rect2i> = emptyList()
 
     override fun renderBg(graphics: GuiGraphics, partialTick: Float, mouseX: Int, mouseY: Int) {
-        renderDirtBackground(graphics)
+
     }
 }

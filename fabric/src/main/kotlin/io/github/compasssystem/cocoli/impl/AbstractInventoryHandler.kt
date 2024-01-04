@@ -83,6 +83,7 @@ class AbstractInventoryHandler(
 
             return when (origins) {
                 InventoryOrigins.BLOCK -> createBlockInventoryHandler(inventoryId, playerInventory, slots, buffer)
+                InventoryOrigins.ENTITY -> createEntityInventoryHandler(inventoryId, playerInventory, slots, buffer)
                 else -> throw IllegalStateException("Unknown InventoryOrigins: $origins")
             }
         }
@@ -101,6 +102,22 @@ class AbstractInventoryHandler(
             }
 
             throw IllegalStateException("Block at $pos is not an OpenableInventoryProvider")
+        }
+
+        private fun createEntityInventoryHandler(inventoryId: Int, playerInventory: Inventory, slots: Int, buffer: FriendlyByteBuf): AbstractInventoryHandler {
+            val entityId = buffer.readInt()
+            val level = playerInventory.player.level()
+
+            val entity = level.getEntity(entityId)
+
+            if (entity is OpenableInventoryProvider<*>) {
+                ClientInit.activeInventoryType = entity.getInventoryType()
+                ClientInit.activeForcedScreenType = entity.getForcedScreenType()
+
+                return AbstractInventoryHandler(inventoryId, SimpleContainer(slots), playerInventory)
+            }
+
+            throw IllegalStateException("Entity with id $entityId is not an OpenableInventoryProvider")
         }
     }
 }

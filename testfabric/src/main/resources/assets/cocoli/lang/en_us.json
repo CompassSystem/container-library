@@ -1,5 +1,6 @@
 {
   "itemGroup.cocoli.tab": "CoCoLi",
+
   "block.cocoli.barrel_9": "Barrel 9",
   "block.cocoli.barrel_18": "Barrel 18",
   "block.cocoli.barrel_27": "Barrel 27",
@@ -14,5 +15,21 @@
   "block.cocoli.barrel_108": "Barrel 108",
   "block.cocoli.barrel_117": "Barrel 117",
   "block.cocoli.barrel_126": "Barrel 126",
-  "block.cocoli.barrel_135": "Barrel 135"
+  "block.cocoli.barrel_135": "Barrel 135",
+
+  "item.cocoli.barrel_9_minecart": "Barrel 9 Minecart",
+  "item.cocoli.barrel_18_minecart": "Barrel 18 Minecart",
+  "item.cocoli.barrel_27_minecart": "Barrel 27 Minecart",
+  "item.cocoli.barrel_36_minecart": "Barrel 36 Minecart",
+  "item.cocoli.barrel_45_minecart": "Barrel 45 Minecart",
+  "item.cocoli.barrel_54_minecart": "Barrel 54 Minecart",
+  "item.cocoli.barrel_63_minecart": "Barrel 63 Minecart",
+  "item.cocoli.barrel_72_minecart": "Barrel 72 Minecart",
+  "item.cocoli.barrel_81_minecart": "Barrel 81 Minecart",
+  "item.cocoli.barrel_90_minecart": "Barrel 90 Minecart",
+  "item.cocoli.barrel_99_minecart": "Barrel 99 Minecart",
+  "item.cocoli.barrel_108_minecart": "Barrel 108 Minecart",
+  "item.cocoli.barrel_117_minecart": "Barrel 117 Minecart",
+  "item.cocoli.barrel_126_minecart": "Barrel 126 Minecart",
+  "item.cocoli.barrel_135_minecart": "Barrel 135 Minecart"
 }
