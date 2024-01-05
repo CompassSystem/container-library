@@ -19,5 +19,6 @@ pluginManagement {
 
 rootProject.name = "container-library"
 
+include(":common", ":common:test")
 include(":fabric", ":fabric:test")
 include(":neoforge", ":neoforge:test")

@@ -1,5 +1,6 @@
 import compass_system.mod_gradle_plugin.ModDependencies
 import compass_system.mod_gradle_plugin.Utils.exclusiveRepo
+import compass_system.mod_gradle_plugin.Utils.modProject
 
 plugins {
     kotlin("jvm") version "1.9.22"
@@ -32,6 +33,7 @@ val modDependencies = ModDependencies().apply {
     add("rei") {
         val reiVersion = "14.0.688" // https://modrinth.com/mod/rei/versions
         compileOnly("me.shedaniel:RoughlyEnoughItems-api-neoforge:$reiVersion")
+        compileOnly("me.shedaniel.cloth:basic-math:0.6.1")
         runtimeOnly("me.shedaniel:RoughlyEnoughItems-neoforge:$reiVersion")
     }
 }
@@ -60,6 +62,8 @@ allprojects {
 
 dependencies {
     modImplementation("thedarkcolour:kotlinforforge-neoforge:4.10.0")
+
+    modProject(":common")
 
     modDependencies.iterateCompileDependencies { dependency -> add("modCompileOnly", dependency) }
 }
