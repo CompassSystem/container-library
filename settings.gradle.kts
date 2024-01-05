@@ -10,7 +10,7 @@ pluginManagement {
         }
         maven {
             name = "NeoForge Maven"
-            url = uri("https://maven.neoforged.net/release")
+            url = uri("https://maven.neoforged.net/releases")
         }
         gradlePluginPortal()
         mavenLocal()
@@ -19,5 +19,5 @@ pluginManagement {
 
 rootProject.name = "container-library"
 
-include(":fabric")
-include(":fabric:test")
+include(":fabric", ":fabric:test")
+include(":neoforge", ":neoforge:test")

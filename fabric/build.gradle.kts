@@ -44,7 +44,8 @@ val modDependencies = ModDependencies().apply {
 
     add("rei") {
         val reiVersion = "14.0.680" // https://modrinth.com/mod/rei/versions
-        implementation("me.shedaniel:RoughlyEnoughItems-fabric:$reiVersion")
+        compileOnly("me.shedaniel:RoughlyEnoughItems-api-fabric:$reiVersion")
+        runtimeOnly("me.shedaniel:RoughlyEnoughItems-fabric:$reiVersion")
     }
 }
 

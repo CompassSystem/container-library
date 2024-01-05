@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion="[2,)" # https://github.com/neoforged/MDK/blob/main/gradle.properties
+license="Apache License 2.0"
+issueTrackerURL="https://github.com/CompassSystem/container-library/issues"
+
+[[mods]]
+modId="cocoli"
+version="${version}"
+displayName="Compasses' Container Library"
+displayURL="https://modrinth.com/mod/cocoli"
+logoFile="icon.png"
+authors="Compasses"
+displayTest="MATCH_VERSION"
+description=''''''
+
+[[dependencies.cocoli]]
+modId="neoforge"
+type="required"
+versionRange="[20.4.70-beta,)"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.cocoli]]
+modId="minecraft"
+type="required"
+versionRange="[1.20.4,1.21)"
+ordering="NONE"
+side="BOTH"

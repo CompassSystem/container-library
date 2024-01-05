@@ -3,5 +3,5 @@ plugins {
 }
 
 mod {
-    projects(":fabric", ":fabric:test")
+    projects(":fabric", ":fabric:test", ":neoforge")
 }
