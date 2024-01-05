@@ -13,8 +13,6 @@ dependencies {
     modImplementation("net.fabricmc:fabric-language-kotlin:1.10.17+kotlin.1.9.22")
     modProject(":fabric")
 
-
-
     modDependencies.iterateRuntimeDependencies { dependency ->
         add("modRuntimeOnly", dependency) {
             exclude(group = "net.fabricmc")

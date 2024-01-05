@@ -1,4 +1,5 @@
 import compass_system.mod_gradle_plugin.ModDependencies
+import compass_system.mod_gradle_plugin.Utils.exclusiveRepo
 
 plugins {
     kotlin("jvm") version "1.9.22"
@@ -50,6 +51,28 @@ val modDependencies = ModDependencies().apply {
 modDependencies.enableMods()
 
 ext["mod_dependencies"] = modDependencies
+
+allprojects {
+    repositories {
+        exclusiveRepo("TerraformersMC", "https://maven.terraformersmc.com/") {
+            includeGroup("com.terraformersmc")
+            includeGroup("dev.emi")
+        }
+
+        exclusiveRepo("Jared", "https://maven.blamejared.com/") {
+            includeGroup("mezz.jei")
+        }
+
+        exclusiveRepo("Shedaniel", "https://maven.shedaniel.me/") {
+            includeGroup("me.shedaniel")
+            includeGroup("me.shedaniel.cloth")
+        }
+
+        exclusiveRepo("Siphalor", "https://maven.siphalor.de/") {
+            includeGroup("de.siphalor")
+        }
+    }
+}
 
 dependencies {
     modImplementation("net.fabricmc:fabric-language-kotlin:1.10.17+kotlin.1.9.22")
