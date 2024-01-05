@@ -18,7 +18,7 @@
   "environment": "*",
   "authors": [ "Compasses" ],
   "icon": "icon.png",
-  "id": "cocoli-test",
+  "id": "cocoli_test",
   "name": "Cocoli Test",
   "version": "${version}"
 }

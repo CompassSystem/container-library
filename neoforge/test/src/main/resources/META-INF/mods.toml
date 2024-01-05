@@ -1,0 +1,14 @@
+modLoader = "javafml"
+loaderVersion="[2,)" # https://github.com/neoforged/MDK/blob/main/gradle.properties
+license="Apache License 2.0"
+issueTrackerURL="https://github.com/CompassSystem/container-library/issues"
+
+[[mods]]
+modId="cocoli_test"
+version="${version}"
+displayName="CoCoLi Test Mod"
+displayURL="https://modrinth.com/mod/cocoli"
+logoFile="icon.png"
+authors="Compasses"
+displayTest="MATCH_VERSION"
+description='''Test mod for CoCoLi.'''
